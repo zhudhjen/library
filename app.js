@@ -4,6 +4,9 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
+var multer = require('multer');
+var fs = require('fs');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -18,9 +21,21 @@ app.set('view engine', 'jade');
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(multer());
+app.use(session({
+    secret: 'library',
+    resave: false,
+    saveUninitialized: true
+}));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// // dynamically include routes (Controller)
+// fs.readdirSync('./controllers').forEach(function (file) {
+//   if(file.substr(-3) == '.js') {
+//       route = require('./controllers/' + file)();
+//   }
+// });
 
 app.use('/', routes);
 app.use('/users', users);

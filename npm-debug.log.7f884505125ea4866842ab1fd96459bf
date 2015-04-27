@@ -1,0 +1,494 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'bcrypt', '--save' ]
+2 info using npm@2.7.5
+3 info using node@v0.12.2
+4 silly cache add args [ 'bcrypt', null ]
+5 verbose cache add spec bcrypt
+6 silly cache add parsed spec { raw: 'bcrypt',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'bcrypt',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed bcrypt@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'bcrypt', range: '*', hasData: false }
+11 silly mapToRegistry name bcrypt
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+15 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/bcrypt
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 12:26:50
+19 verbose request id 8acce0f5013c869a
+20 http request GET https://registry.npmjs.org/bcrypt
+21 http 200 https://registry.npmjs.org/bcrypt
+22 silly get cb [ 200,
+22 silly get   { date: 'Sun, 26 Apr 2015 04:27:10 GMT',
+22 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"4PVMCW3U0DURBP2R3AGC6KQYX"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '65248',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     'x-served-by': 'cache-nrt6129-NRT',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1430022430.168699,VS0,VE710',
+22 silly get     vary: 'Accept',
+22 silly get     'keep-alive': 'timeout=10, max=50',
+22 silly get     connection: 'Keep-Alive' } ]
+23 verbose get saving bcrypt to /home/jonathan/.npm/registry.npmjs.org/bcrypt/.cache.json
+24 verbose getCacheStat cache creation not in flight; initializing
+25 silly addNameRange number 2 { name: 'bcrypt', range: '*', hasData: true }
+26 silly addNameRange versions [ 'bcrypt',
+26 silly addNameRange   [ '0.1.2',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.1.3',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.2.3',
+26 silly addNameRange     '0.2.4',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.3.2',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.7.1',
+26 silly addNameRange     '0.7.2',
+26 silly addNameRange     '0.7.3',
+26 silly addNameRange     '0.7.4',
+26 silly addNameRange     '0.7.5',
+26 silly addNameRange     '0.7.6',
+26 silly addNameRange     '0.7.7',
+26 silly addNameRange     '0.7.8',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.8.2' ] ]
+27 verbose addNamed bcrypt@0.8.2
+28 silly addNamed semver.valid 0.8.2
+29 silly addNamed semver.validRange 0.8.2
+30 silly mapToRegistry name bcrypt
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+34 verbose addRemoteTarball https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz',
+35 verbose addRemoteTarball   '4732f0ddd1e0fb066dcd8ad9472d3d300fd96824' ]
+36 info retry fetch attempt 1 at 12:27:01
+37 info attempt registry request try #1 at 12:27:01
+38 http fetch GET https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz
+39 http fetch 200 https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz
+40 silly fetchAndShaCheck shasum 4732f0ddd1e0fb066dcd8ad9472d3d300fd96824
+41 verbose addTmpTarball /tmp/npm-13902-d9d6ca41/registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for bcrypt@0.8.2
+43 silly cache afterAdd bcrypt@0.8.2
+44 verbose afterAdd /home/jonathan/.npm/bcrypt/0.8.2/package/package.json not in flight; writing
+45 verbose afterAdd /home/jonathan/.npm/bcrypt/0.8.2/package/package.json written
+46 silly install resolved [ { name: 'bcrypt',
+46 silly install resolved     description: 'A bcrypt library for NodeJS.',
+46 silly install resolved     keywords:
+46 silly install resolved      [ 'bcrypt',
+46 silly install resolved        'password',
+46 silly install resolved        'auth',
+46 silly install resolved        'authentication',
+46 silly install resolved        'encryption',
+46 silly install resolved        'crypt',
+46 silly install resolved        'crypto' ],
+46 silly install resolved     main: './bcrypt',
+46 silly install resolved     version: '0.8.2',
+46 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+46 silly install resolved     engines: { node: '>= 0.6.0' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'https://github.com/ncb000gt/node.bcrypt.js.git' },
+46 silly install resolved     licenses: [ [Object] ],
+46 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+46 silly install resolved     scripts:
+46 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+46 silly install resolved        install: 'node-gyp rebuild' },
+46 silly install resolved     dependencies: { bindings: '1.2.0', nan: '1.7.0' },
+46 silly install resolved     devDependencies: { nodeunit: '>=0.6.4' },
+46 silly install resolved     contributors:
+46 silly install resolved      [ [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object] ],
+46 silly install resolved     gypfile: true,
+46 silly install resolved     gitHead: '5f5f0e9fa8c0f18b6489d6a07551999de2eb40e5',
+46 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js',
+46 silly install resolved     _id: 'bcrypt@0.8.2',
+46 silly install resolved     _shasum: '4732f0ddd1e0fb066dcd8ad9472d3d300fd96824',
+46 silly install resolved     _from: 'bcrypt@*',
+46 silly install resolved     _npmVersion: '2.7.3',
+46 silly install resolved     _nodeVersion: '0.10.35',
+46 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '4732f0ddd1e0fb066dcd8ad9472d3d300fd96824',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.8.2.tgz' } ]
+47 info install bcrypt@0.8.2 into /mnt/Web/library
+48 info installOne bcrypt@0.8.2
+49 verbose installOne of bcrypt to /mnt/Web/library not in flight; installing
+50 verbose lock using /home/jonathan/.npm/_locks/bcrypt-0e27bf31f233c2f5.lock for /mnt/Web/library/node_modules/bcrypt
+51 silly install write writing bcrypt 0.8.2 to /mnt/Web/library/node_modules/bcrypt
+52 silly cache addNamed cb bcrypt@0.8.2
+53 verbose unbuild node_modules/bcrypt
+54 silly gentlyRm /mnt/Web/library/node_modules/bcrypt is being purged from base /mnt/Web/library
+55 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt
+56 verbose tar unpack /home/jonathan/.npm/bcrypt/0.8.2/package.tgz
+57 verbose tar unpacking to /mnt/Web/library/node_modules/bcrypt
+58 silly gentlyRm /mnt/Web/library/node_modules/bcrypt is being purged
+59 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm extractEntry bcrypt.js
+66 silly gunzTarPerm extractEntry binding.gyp
+67 silly gunzTarPerm extractEntry .travis.yml
+68 silly gunzTarPerm extractEntry CHANGELOG.md
+69 silly gunzTarPerm extractEntry examples/async_compare.js
+70 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+71 silly gunzTarPerm extractEntry test/async.js
+72 silly gunzTarPerm extractEntry test/repetitions.js
+73 silly gunzTarPerm extractEntry test/sync.js
+74 silly gunzTarPerm extractEntry Makefile
+75 silly gunzTarPerm extractEntry src/bcrypt.cc
+76 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+77 silly gunzTarPerm extractEntry src/blowfish.cc
+78 silly gunzTarPerm extractEntry src/node_blf.h
+79 silly gunzTarPerm extractEntry werker.yml
+80 info preinstall bcrypt@0.8.2
+81 silly prepareForInstallMany adding bindings@1.2.0 from bcrypt dependencies
+82 silly prepareForInstallMany adding nan@1.7.0 from bcrypt dependencies
+83 silly cache add args [ 'nan@1.7.0', null ]
+84 verbose cache add spec nan@1.7.0
+85 silly cache add parsed spec { raw: 'nan@1.7.0',
+85 silly cache add   scope: null,
+85 silly cache add   name: 'nan',
+85 silly cache add   rawSpec: '1.7.0',
+85 silly cache add   spec: '1.7.0',
+85 silly cache add   type: 'version' }
+86 verbose addNamed nan@1.7.0
+87 silly addNamed semver.valid 1.7.0
+88 silly addNamed semver.validRange 1.7.0
+89 silly mapToRegistry name nan
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry uri https://registry.npmjs.org/nan
+93 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+94 silly cache add args [ 'bindings@1.2.0', null ]
+95 verbose cache add spec bindings@1.2.0
+96 silly cache add parsed spec { raw: 'bindings@1.2.0',
+96 silly cache add   scope: null,
+96 silly cache add   name: 'bindings',
+96 silly cache add   rawSpec: '1.2.0',
+96 silly cache add   spec: '1.2.0',
+96 silly cache add   type: 'version' }
+97 verbose addNamed bindings@1.2.0
+98 silly addNamed semver.valid 1.2.0
+99 silly addNamed semver.validRange 1.2.0
+100 silly mapToRegistry name bindings
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry uri https://registry.npmjs.org/bindings
+104 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+105 verbose request uri https://registry.npmjs.org/nan
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 12:27:04
+108 http request GET https://registry.npmjs.org/nan
+109 verbose request uri https://registry.npmjs.org/bindings
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 12:27:04
+112 http request GET https://registry.npmjs.org/bindings
+113 http 200 https://registry.npmjs.org/bindings
+114 silly get cb [ 200,
+114 silly get   { date: 'Sun, 26 Apr 2015 04:27:22 GMT',
+114 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+114 silly get     etag: '"5997G8NY1OJEMZ1HNHL7VBX5J"',
+114 silly get     'content-type': 'application/json',
+114 silly get     'cache-control': 'max-age=60',
+114 silly get     'content-length': '17925',
+114 silly get     'accept-ranges': 'bytes',
+114 silly get     via: '1.1 varnish',
+114 silly get     age: '1',
+114 silly get     'x-served-by': 'cache-nrt6129-NRT',
+114 silly get     'x-cache': 'HIT',
+114 silly get     'x-cache-hits': '1',
+114 silly get     'x-timer': 'S1430022442.023435,VS0,VE0',
+114 silly get     vary: 'Accept',
+114 silly get     'keep-alive': 'timeout=10, max=50',
+114 silly get     connection: 'Keep-Alive' } ]
+115 verbose get saving bindings to /home/jonathan/.npm/registry.npmjs.org/bindings/.cache.json
+116 silly mapToRegistry name bindings
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry uri https://registry.npmjs.org/bindings
+120 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz not in flight; adding
+121 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz',
+121 verbose addRemoteTarball   'c224fc5b349a84043779f97a6271d9d70da7636f' ]
+122 info retry fetch attempt 1 at 12:27:07
+123 info attempt registry request try #1 at 12:27:07
+124 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz
+125 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz
+126 silly fetchAndShaCheck shasum c224fc5b349a84043779f97a6271d9d70da7636f
+127 verbose addTmpTarball /tmp/npm-13902-d9d6ca41/registry.npmjs.org/bindings/-/bindings-1.2.0.tgz not in flight; adding
+128 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.0
+129 silly cache afterAdd bindings@1.2.0
+130 verbose afterAdd /home/jonathan/.npm/bindings/1.2.0/package/package.json not in flight; writing
+131 verbose afterAdd /home/jonathan/.npm/bindings/1.2.0/package/package.json written
+132 http 200 https://registry.npmjs.org/nan
+133 silly get cb [ 200,
+133 silly get   { date: 'Sun, 26 Apr 2015 04:27:20 GMT',
+133 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+133 silly get     etag: '"5LRTVQC14WJCD8RYVQAJCXI0A"',
+133 silly get     'content-type': 'application/json',
+133 silly get     'cache-control': 'max-age=60',
+133 silly get     'content-length': '106083',
+133 silly get     'accept-ranges': 'bytes',
+133 silly get     via: '1.1 varnish',
+133 silly get     age: '56',
+133 silly get     'x-served-by': 'cache-nrt6122-NRT',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '1',
+133 silly get     'x-timer': 'S1430022440.978235,VS0,VE1',
+133 silly get     vary: 'Accept',
+133 silly get     'keep-alive': 'timeout=10, max=50',
+133 silly get     connection: 'Keep-Alive' } ]
+134 verbose get saving nan to /home/jonathan/.npm/registry.npmjs.org/nan/.cache.json
+135 silly mapToRegistry name nan
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry uri https://registry.npmjs.org/nan
+139 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-1.7.0.tgz not in flight; adding
+140 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz',
+140 verbose addRemoteTarball   '755b997404e83cbe7bc08bc3c5c56291bce87438' ]
+141 info retry fetch attempt 1 at 12:27:21
+142 info attempt registry request try #1 at 12:27:21
+143 http fetch GET https://registry.npmjs.org/nan/-/nan-1.7.0.tgz
+144 http fetch 200 https://registry.npmjs.org/nan/-/nan-1.7.0.tgz
+145 silly fetchAndShaCheck shasum 755b997404e83cbe7bc08bc3c5c56291bce87438
+146 verbose addTmpTarball /tmp/npm-13902-d9d6ca41/registry.npmjs.org/nan/-/nan-1.7.0.tgz not in flight; adding
+147 verbose addTmpTarball already have metadata; skipping unpack for nan@1.7.0
+148 silly cache afterAdd nan@1.7.0
+149 verbose afterAdd /home/jonathan/.npm/nan/1.7.0/package/package.json not in flight; writing
+150 verbose afterAdd /home/jonathan/.npm/nan/1.7.0/package/package.json written
+151 silly install resolved [ { name: 'bindings',
+151 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+151 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+151 silly install resolved     version: '1.2.0',
+151 silly install resolved     author:
+151 silly install resolved      { name: 'Nathan Rajlich',
+151 silly install resolved        email: 'nathan@tootallnate.net',
+151 silly install resolved        url: 'http://tootallnate.net' },
+151 silly install resolved     repository:
+151 silly install resolved      { type: 'git',
+151 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+151 silly install resolved     main: './bindings.js',
+151 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+151 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+151 silly install resolved     _id: 'bindings@1.2.0',
+151 silly install resolved     dist:
+151 silly install resolved      { shasum: 'c224fc5b349a84043779f97a6271d9d70da7636f',
+151 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz' },
+151 silly install resolved     _from: 'bindings@1.2.0',
+151 silly install resolved     _npmVersion: '1.4.3',
+151 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+151 silly install resolved     maintainers: [ [Object], [Object] ],
+151 silly install resolved     directories: {},
+151 silly install resolved     _shasum: 'c224fc5b349a84043779f97a6271d9d70da7636f',
+151 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.0.tgz' },
+151 silly install resolved   { name: 'nan',
+151 silly install resolved     version: '1.7.0',
+151 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+151 silly install resolved     main: 'include_dirs.js',
+151 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+151 silly install resolved     scripts:
+151 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+151 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+151 silly install resolved     contributors:
+151 silly install resolved      [ [Object],
+151 silly install resolved        [Object],
+151 silly install resolved        [Object],
+151 silly install resolved        [Object],
+151 silly install resolved        [Object],
+151 silly install resolved        [Object],
+151 silly install resolved        [Object] ],
+151 silly install resolved     devDependencies:
+151 silly install resolved      { bindings: '~1.2.1',
+151 silly install resolved        'node-gyp': '~1.0.2',
+151 silly install resolved        pangyp: '~2.0.1',
+151 silly install resolved        tap: '~0.5.0',
+151 silly install resolved        xtend: '~4.0.0' },
+151 silly install resolved     license: 'MIT',
+151 silly install resolved     gitHead: '550efb5dde5cb6bf79db87ab48dce850e56e971a',
+151 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+151 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+151 silly install resolved     _id: 'nan@1.7.0',
+151 silly install resolved     _shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+151 silly install resolved     _from: 'nan@1.7.0',
+151 silly install resolved     _npmVersion: '2.5.1',
+151 silly install resolved     _nodeVersion: '0.12.0',
+151 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+151 silly install resolved     maintainers: [ [Object], [Object] ],
+151 silly install resolved     dist:
+151 silly install resolved      { shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+151 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.7.0.tgz' },
+151 silly install resolved     directories: {},
+151 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz' } ]
+152 info install bindings@1.2.0 into /mnt/Web/library/node_modules/bcrypt
+153 info install nan@1.7.0 into /mnt/Web/library/node_modules/bcrypt
+154 info installOne bindings@1.2.0
+155 verbose installOne of bindings to /mnt/Web/library/node_modules/bcrypt not in flight; installing
+156 info installOne nan@1.7.0
+157 verbose installOne of nan to /mnt/Web/library/node_modules/bcrypt not in flight; installing
+158 verbose lock using /home/jonathan/.npm/_locks/bindings-73c0851ac4a39981.lock for /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+159 verbose lock using /home/jonathan/.npm/_locks/nan-0593c6448a5e91fb.lock for /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+160 silly install write writing bindings 1.2.0 to /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+161 silly install write writing nan 1.7.0 to /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+162 silly cache addNamed cb bindings@1.2.0
+163 verbose unbuild node_modules/bcrypt/node_modules/bindings
+164 silly cache addNamed cb nan@1.7.0
+165 verbose unbuild node_modules/bcrypt/node_modules/nan
+166 silly gentlyRm /mnt/Web/library/node_modules/bcrypt/node_modules/bindings is being purged from base /mnt/Web/library
+167 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+168 silly gentlyRm /mnt/Web/library/node_modules/bcrypt/node_modules/nan is being purged from base /mnt/Web/library
+169 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+170 verbose tar unpack /home/jonathan/.npm/bindings/1.2.0/package.tgz
+171 verbose tar unpacking to /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+172 silly gentlyRm /mnt/Web/library/node_modules/bcrypt/node_modules/bindings is being purged
+173 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+174 verbose tar unpack /home/jonathan/.npm/nan/1.7.0/package.tgz
+175 verbose tar unpacking to /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+176 silly gentlyRm /mnt/Web/library/node_modules/bcrypt/node_modules/nan is being purged
+177 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+178 silly gunzTarPerm modes [ '755', '644' ]
+179 silly gunzTarPerm modes [ '755', '644' ]
+180 silly gunzTarPerm extractEntry package.json
+181 silly gunzTarPerm extractEntry package.json
+182 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+183 silly gunzTarPerm extractEntry README.md
+184 silly gunzTarPerm extractEntry bindings.js
+185 silly gunzTarPerm extractEntry include_dirs.js
+186 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+187 silly gunzTarPerm extractEntry LICENSE.md
+188 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+189 silly gunzTarPerm extractEntry .dntrc
+190 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+191 silly gunzTarPerm extractEntry appveyor.yml
+192 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+193 silly gunzTarPerm extractEntry nan.h
+194 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+195 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+196 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+197 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+198 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+199 silly gunzTarPerm extractEntry nan_new.h
+200 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+201 silly gunzTarPerm extractEntry nan_string_bytes.h
+202 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+203 silly gunzTarPerm extractEntry CHANGELOG.md
+204 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+205 info preinstall bindings@1.2.0
+206 silly install resolved []
+207 verbose about to build /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+208 info build /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+209 verbose linkStuff [ false,
+209 verbose linkStuff   false,
+209 verbose linkStuff   false,
+209 verbose linkStuff   '/mnt/Web/library/node_modules/bcrypt/node_modules' ]
+210 info linkStuff bindings@1.2.0
+211 verbose linkBins bindings@1.2.0
+212 verbose linkMans bindings@1.2.0
+213 verbose rebuildBundles bindings@1.2.0
+214 info install bindings@1.2.0
+215 info postinstall bindings@1.2.0
+216 verbose unlock done using /home/jonathan/.npm/_locks/bindings-73c0851ac4a39981.lock for /mnt/Web/library/node_modules/bcrypt/node_modules/bindings
+217 info preinstall nan@1.7.0
+218 silly install resolved []
+219 verbose about to build /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+220 info build /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+221 verbose linkStuff [ false,
+221 verbose linkStuff   false,
+221 verbose linkStuff   false,
+221 verbose linkStuff   '/mnt/Web/library/node_modules/bcrypt/node_modules' ]
+222 info linkStuff nan@1.7.0
+223 verbose linkBins nan@1.7.0
+224 verbose linkMans nan@1.7.0
+225 verbose rebuildBundles nan@1.7.0
+226 info install nan@1.7.0
+227 info postinstall nan@1.7.0
+228 verbose unlock done using /home/jonathan/.npm/_locks/nan-0593c6448a5e91fb.lock for /mnt/Web/library/node_modules/bcrypt/node_modules/nan
+229 verbose about to build /mnt/Web/library/node_modules/bcrypt
+230 info build /mnt/Web/library/node_modules/bcrypt
+231 verbose linkStuff [ false, false, false, '/mnt/Web/library/node_modules' ]
+232 info linkStuff bcrypt@0.8.2
+233 verbose linkBins bcrypt@0.8.2
+234 verbose linkMans bcrypt@0.8.2
+235 verbose rebuildBundles bcrypt@0.8.2
+236 verbose rebuildBundles [ 'bindings', 'nan' ]
+237 info install bcrypt@0.8.2
+238 verbose unsafe-perm in lifecycle true
+239 info bcrypt@0.8.2 Failed to exec install script
+240 verbose unlock done using /home/jonathan/.npm/_locks/bcrypt-0e27bf31f233c2f5.lock for /mnt/Web/library/node_modules/bcrypt
+241 verbose stack Error: bcrypt@0.8.2 install: `node-gyp rebuild`
+241 verbose stack Exit status 1
+241 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+241 verbose stack     at EventEmitter.emit (events.js:110:17)
+241 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+241 verbose stack     at ChildProcess.emit (events.js:110:17)
+241 verbose stack     at maybeClose (child_process.js:1015:16)
+241 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+242 verbose pkgid bcrypt@0.8.2
+243 verbose cwd /mnt/Web/library
+244 error Linux 3.19.3-3-ARCH
+245 error argv "/usr/bin/node" "/usr/bin/npm" "install" "bcrypt" "--save"
+246 error node v0.12.2
+247 error npm  v2.7.5
+248 error code ELIFECYCLE
+249 error bcrypt@0.8.2 install: `node-gyp rebuild`
+249 error Exit status 1
+250 error Failed at the bcrypt@0.8.2 install script 'node-gyp rebuild'.
+250 error This is most likely a problem with the bcrypt package,
+250 error not with npm itself.
+250 error Tell the author that this fails on your system:
+250 error     node-gyp rebuild
+250 error You can get their info via:
+250 error     npm owner ls bcrypt
+250 error There is likely additional logging output above.
+251 verbose exit [ 1, true ]
+252 verbose unbuild node_modules/bcrypt
+253 info preuninstall bcrypt@0.8.2
+254 info uninstall bcrypt@0.8.2
+255 verbose unbuild rmStuff bcrypt@0.8.2 from /mnt/Web/library/node_modules
+256 info postuninstall bcrypt@0.8.2
+257 silly gentlyRm /mnt/Web/library/node_modules/bcrypt is being purged from base /mnt/Web/library
+258 verbose gentlyRm don't care about contents; nuking /mnt/Web/library/node_modules/bcrypt
+259 silly vacuum-fs purging /mnt/Web/library/node_modules/bcrypt
+260 error error rolling back Error: ENOTEMPTY, rmdir '/mnt/Web/library/node_modules/bcrypt'
+260 error error rolling back     at Error (native)
+260 error error rolling back  { [Error: ENOTEMPTY, rmdir '/mnt/Web/library/node_modules/bcrypt']
+260 error error rolling back   errno: -39,
+260 error error rolling back   code: 'ENOTEMPTY',
+260 error error rolling back   path: '/mnt/Web/library/node_modules/bcrypt' }
