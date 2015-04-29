@@ -1,1 +1,0 @@
-﻿(  30009, Computer Science 1, 中文, yyy, 2010, yyy, 190.00, 1 )
