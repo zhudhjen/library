@@ -1,0 +1,30 @@
+label {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.result-count {
+    margin-left: 20px;
+    color: #888;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;    
+}
+
+#results {
+    margin-bottom: 50px;
+    display: none;
+}
+
+th {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}

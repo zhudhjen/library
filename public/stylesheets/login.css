@@ -1,0 +1,28 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#login-main {
+    margin-top: 100px;
+}
+
+#login-main h2 {
+    width: 300px;
+}
+
+#login-notify {
+    height: 38px;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    background-color: #db4b1e;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .1s ease;
+}

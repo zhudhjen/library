@@ -1,0 +1,34 @@
+extends layout
+
+block header
+    link(rel="stylesheet", href="/stylesheets/form.css")
+    script(src="/javascripts/record.js")
+
+block content
+    h5 Show Borrow Records
+    form.row#record(name="record", action="/record/list", method="get")
+        div.row
+            div.six.columns
+                label(for="card-id") Card ID
+                input.u-full-width#card-id(type="text", name="id", placeholder="required", required, autofocus)
+            div.two.columns
+                label(for="submit") &nbsp;
+                input.u-full-width.button-primary(type="submit", value="submit")
+    div#results
+        h5 The Result
+            span.result-count 0 entries found
+        table.u-full-width
+            thead
+                th ID
+                th Category
+                th Title
+                th Press
+                th Author
+                th Year
+                th Price
+                th Remain / Total
+                th Due
+                //- th Borrow Date
+                //- th Return Date
+            tbody
+

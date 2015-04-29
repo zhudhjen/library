@@ -1,0 +1,1 @@
+(  book_no_8, Computer Science 1, жпнд, 3, yyy, 2010, yyy, 190.00, 1 )

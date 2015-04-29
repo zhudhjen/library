@@ -114,5 +114,11 @@
     "predef": [         // Extra globals.
         //"exampleVar",
     ],
+    "globals": {
+        "$":false,
+        "jQuery": false,
+        "window": false,
+        "document": false
+    },
     "indent": 4         // Specify indentation spacing
 }

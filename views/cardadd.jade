@@ -1,0 +1,28 @@
+extends layout
+
+block header
+    link(rel="stylesheet", href="/stylesheets/form.css")
+    script(src="/javascripts/cardadd.js")
+
+block content
+    h5 Add a New Library Card
+    form.row#card-add(name="card-add", action="/card", method="post")
+        div.row
+            div.six.columns
+                label(for="card-id") Card ID
+                input.u-full-width#card-id(type="text", name="id", placeholder="required", required, autofocus)
+            div.six.columns
+                label(for="card-name") Name
+                input.u-full-width#card-name(type="text", name="name", placeholder="required", required)
+        div.row
+            div.six.columns
+                label(for="card-department") Department
+                input.u-full-width#card-department(type="text", name="department", placeholder="required", required)
+            div.six.columns
+                label(for="card-category") Category
+                input.u-full-width#card-category(type="text", name="category", placeholder="required", required)
+        div.row.actions
+            div.four.columns
+                input.u-full-width.button-primary(type="submit", value="submit")
+            div.four.columns
+                input.u-full-width(type="reset", value="reset")

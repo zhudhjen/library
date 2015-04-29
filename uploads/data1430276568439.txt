@@ -1,0 +1,4 @@
+(  book_no_1, Computer Science 1, Computer Architecture 1, yyy, 2004, xxx, 90.00, 2 )
+(  book_no_2, Computer Science 2, Computer Architecture 3, xxx, 2008, xxx, 9.00, 3 )
+(  book_no_3, Computer Science 2, Computer Architecture 2, yyy, 2003, xxx, 900.00, 3 )
+(  book_no_4, Computer Science 1, Computer Architecture 3, yyy, 2010, yyy, 190.00, 1 )

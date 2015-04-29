@@ -1,0 +1,75 @@
+extends layout
+
+block header
+    link(rel="stylesheet", href="/stylesheets/form.css")
+    script(src="/javascripts/bookquery.js")
+
+block content
+    h5 Find Books
+    form.row#book-query(name="book-query", action="/book", method="get")
+        div.row
+            div.six.columns
+                label(for="book-id") Book ID
+                input.u-full-width#book-id(type="text", name="id" autofocus)
+            div.six.columns
+                label(for="book-category") Category
+                input.u-full-width#book-id(type="text", name="category")
+        div.row
+            div.six.columns
+                label(for="book-id") Title
+                input.u-full-width#book-title(type="text", name="title")
+            div.six.columns
+                label(for="book-press") Press
+                input.u-full-width#book-press(type="text", name="press")
+        div.row
+            div.three.columns
+                label(for="book-year-from") From Year
+                input.u-full-width#book-year-from(type="number", name="from_year")
+            div.three.columns
+                label(for="book-year-to") To Year
+                input.u-full-width#book-year-to(type="number", name="to_year")
+            div.six.columns
+                label(for="book-author") Author
+                input.u-full-width#book-author(type="text", name="author")
+        div.row
+            div.three.columns
+                label(for="book-price-from") From Price
+                input.u-full-width#book-price-from(type="number", name="from_price")
+            div.three.columns
+                label(for="book-price-to") To Price
+                input.u-full-width#book-price-to(type="number", name="to_price")
+            div.three.columns
+                label(for="book-sort-by") Sort By
+                select.u-full-width#book-sort-by(type="number", name="sort_by")
+                    option(value="book_id") ID
+                    option(value="category") Category
+                    option(value="title", selected) Title
+                    option(value="press") Press
+                    option(value="author") Author
+                    option(value="year") Year
+                    option(value="price") Price
+            div.three.columns
+                label(for="book-sort-order") Sort Order
+                select.u-full-width#book-sort-order(type="number", name="sort_order")
+                    option(value=0) Ascending
+                    option(value=1) Descending
+        div.row.actions
+            div.four.columns
+                input.u-full-width.button-primary(type="submit", value="submit")
+            div.four.columns
+                input.u-full-width(type="reset", value="reset")
+    div#results
+        h5 The Result
+            span.result-count 3 entries found
+        table.u-full-width
+            thead
+                th ID
+                th Category
+                th Title
+                th Press
+                th Author
+                th Year
+                th Price
+                th Remain / Total
+            tbody
+

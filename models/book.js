@@ -7,7 +7,8 @@ exports.add = function(bookIns, callback) {
 };
 
 exports.query = function(queryIns, callback) {
-    var queryParams = [];
+    var queryParams = [], 
+        orderParam = '';
     if (queryIns.book_id) {
         queryParams.push('`book_id` = ' + db.escape(queryIns.book_id));
     }
@@ -23,21 +24,29 @@ exports.query = function(queryIns, callback) {
     if (queryIns.author) {
         queryParams.push('`author` = ' + db.escape(queryIns.author));
     }
-    if (!isNaN(queryIns.year.from)) {
-        queryParams.push('`year` >= ' + queryIns.year.from);
+    if (queryIns.year) {    
+        if (!isNaN(queryIns.year.from)) {
+            queryParams.push('`year` >= ' + db.escape(queryIns.year.from));
+        }
+        if (!isNaN(queryIns.year.to)) {
+            queryParams.push('`year` <= ' + db.escape(queryIns.year.to));
+        }
     }
-    if (!isNaN(queryIns.year.to)) {
-        queryParams.push('`year` <= ' + queryIns.year.to);
+    if (queryIns.price) {    
+        if (!isNaN(queryIns.price.from)) {
+            queryParams.push('`price` >= ' + db.escape(queryIns.price.from));
+        }
+        if (!isNaN(queryIns.price.to)) {
+            queryParams.push('`price` <= ' + db.escape(queryIns.price.to));
+        }
     }
-    if (!isNaN(queryIns.price.from)) {
-        queryParams.push('`price` >= ' + queryIns.price.from);
+    if (queryIns.sort_by) {
+        orderParam = ' ORDER BY ' + db.escapeId(queryIns.sort_by);
+        if (!isNaN(queryIns.sort_order)) {
+            orderParam += queryIns.sort_order ? ' DESC ' : ' ASC ';
+        }
     }
-    if (!isNaN(queryIns.price.to)) {
-        queryParams.push('`price` <= ' + queryIns.price.to);
-    }
-    console.log(queryIns);
-    console.log(queryParams);
-    db.query('SELECT * FROM book' + (queryParams.length ? (' WHERE ' + queryParams.join(' AND ')) : '') + ' LIMIT 50' , function(err, rows, fields) {
+    db.query('SELECT * FROM book ' + (queryParams.length ? (' WHERE ' + queryParams.join(' AND ')) : '') + orderParam + ' LIMIT 50' , function(err, rows, fields) {
         callback(err, rows, fields);
     });
 };

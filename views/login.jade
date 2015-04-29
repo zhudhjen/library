@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Library Management System
+        link(rel="stylesheet", href="/stylesheets/login.css")
+        link(rel="stylesheet", href="/skeleton/css/normalize.css")
+        link(rel="stylesheet", href="/skeleton/css/skeleton.css")
+        script(src="/jquery/dist/jquery.min.js")
+        script(src="/javascripts/login.js")
+    body
+        div.row#login-main
+            div.four.offset-by-four.columns
+                div.u-full-width.red-notify#login-notify Notify
+                h2 Library Management System
+                form(name="login", action="/login", method="post")
+                    input.u-full-width#username(type="text", name="username", placeholder="username", autofocus, required)
+                    input.u-full-width#password(type="password", name="password", placeholder="password", required)
+                    input.u-full-width.button-primary#submit(type="submit", value="login")

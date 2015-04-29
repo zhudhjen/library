@@ -4,16 +4,18 @@ var db = require('./db');
 exports.manualLogin = function(username, password, callback) {
     db.query('SELECT * FROM user WHERE username = ?', [username], function(err, rows, fields) {
         if (err) {
-            throw err;
+            console.log(err);
+            callback('Error ' + err.errno + ': ' + err.code);
+            return;
         }
         if (!rows.length) {
-            callback('User not found.');
+            callback('User not found');
         } else {
             validatePassword(password, rows[0].password, function(err, success) {
                 if (success) {
-                    callback(null, true);
+                    callback(null, rows[0]);
                 } else {
-                    callback('Password not correct.');
+                    callback('Password not correct');
                 }
             });
         }

@@ -1,7 +1,35 @@
 doctype html
 html
     head
-        title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
+        title Library Management System
+        link(rel="stylesheet", href="/skeleton/css/normalize.css")
+        link(rel="stylesheet", href="/skeleton/css/skeleton.css")
+        link(rel="stylesheet", href="/stylesheets/layout.css")
+        script(src="/jquery/dist/jquery.min.js")
+        script(src="/javascripts/notification.js")
+        block header
     body
-        block content
+        div.row#wrapper
+            div.ten.columns.offset-by-one.column
+                div.row#header
+                    div.six.columns#main-title
+                        h2 Library Management System
+                    div.four.columns
+                        div#notification
+                    div.two.columns#user-info
+                        p.u-full-width#greet Hi, 
+                            span.u-full-width= name
+                        a.u-full-width#logout(href="/logout") Management Logout
+                div#header-seperator
+                div.row#main-container
+                    div#sidebar(class="three columns #{nav}")
+                        a.home(href="/") Home
+                        a.book-add(href="/book/add") Book Add
+                        a.book-query(href="/book/query") Book Search
+                        a.record(href="/record") Borrow Record
+                        a.borrow(href="/borrow") Borrow
+                        a.return(href="/return") Return
+                        a.card-add(href="/card/add") Card Add
+                        a.card-delete(href="/card/delete") Card Dispose
+                    div.nine.columns#main
+                        block content

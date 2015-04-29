@@ -1,0 +1,24 @@
+extends layout
+
+block header
+    link(rel="stylesheet", href="/stylesheets/form.css")
+    script(src="/javascripts/borrow.js")
+
+block content
+    h5 Borrow a Book
+    form.row#borrow(name="borrow", action="/borrow", method="post")
+        div.row
+            div.six.columns
+                label(for="card-id") Card ID
+                input.u-full-width#card-id(type="text", name="card_id", placeholder="required", required, autofocus)
+        div.row
+            div.six.columns
+                label(for="book-id") Book ID
+                input.u-full-width#book-id(type="text", name="book_id", placeholder="required", required)
+        div.row
+            div.six.columns
+                label(for="return-date") Return Date
+                input.u-full-width#return-date(type="datetime-local", name="return_date", placeholder="required", required)
+        div.row.actions
+            div.six.columns
+                input.u-full-width.button-primary(type="submit", value="submit")
